@@ -13,6 +13,8 @@ Read more about SVG sprites:
 
 ## Install
 
+This package is available on Atmosphere as [`lookback:entypo`](https://atmospherejs.com/lookback/tooltips).
+
 Install package with
 
 ```
