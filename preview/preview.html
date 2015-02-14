@@ -1,0 +1,28 @@
+<head>
+  <title>Entypo icons for Meteor</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Entypo icons for Meteor</h1>
+  <p class="subhead">By <a href="http://lookback.io">Lookback</a> · <a href="http://entypo.com/">Entypo</a> ·
+  <a href="http://github.com/lookback/meteor-entypo">GitHub</a></p>
+
+  {{> icons}}
+</body>
+
+<template name="icons">
+  {{#if icons}}
+  <ul class="icons-list">
+    {{#each icons}}
+      <li>
+        {{ > entypo name}}
+        <code>{{name}}</code>
+      </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</template>

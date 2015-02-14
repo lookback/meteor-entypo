@@ -1,0 +1,91 @@
+$accent:             #C0392B;  // red
+$dark:               #191E22;  // black-ish
+
+$sans: 'Helvetica Neue', Helvetica, sans-serif;
+$heading: 'Playfair Display', $sans;
+
+// Suggestion on styling for the .icon class.
+.icon {
+  fill: currentColor;  /* Will be inherited from parent's 'color' property. */
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $sans;
+  -webkit-font-smoothing: antialiased;
+  background: $dark;
+  color: rgba(#fff, .8);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $heading;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.subhead {
+  font-family: $heading;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3em;
+}
+
+code {
+  font-family: Menlo, Monaco, Courier, monospace;
+  font-size: .75rem;
+}
+
+.icons-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+
+  .icon {
+    margin-bottom: 1rem;
+    transition: fill .2s ease-out;
+  }
+
+  li {
+    width: 20%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      .icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    li {
+      width: 33%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    li {
+      width: 100%;
+    }
+  }
+}
