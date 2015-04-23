@@ -2,7 +2,7 @@ var where = 'client';
 
 Package.describe({
   name: 'lookback:entypo',
-  version: '1.0.0',
+  version: '1.1.0',
   summary: 'Entypo icons packaged as SVG sprite for easy template use in Meteor.',
   git: 'http://github.com/lookback/meteor-entypo.git'
 });
